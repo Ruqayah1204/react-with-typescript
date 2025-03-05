@@ -26,7 +26,8 @@ body.dark .theme-toggle-btn {
 
 /* Auto Save Input Stylings */
 
-.auto-save-input {
+.auto-save-input,
+.show-hide-btn {
   padding: 10px;
   border: 1px solid rgba(128, 0, 128, 0.429);
   box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.368);
@@ -48,4 +49,11 @@ body.dark .theme-toggle-btn {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+}
+
+/* Show Hide Component */
+.show-hide-btn {
+  width: 150px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
