@@ -1,13 +1,15 @@
-import ThemeToggle from "./Toggle";
+import AutoSaveInput from "./AutoSaveInput";
+// import ThemeToggle from "./Toggle";
 
 function App() {
   return (
     <>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <div>
-        <h1>Implementing Light/Dark Theme Toggle</h1>
-        <p>Click on the button above and change the page theme</p>
+        <h1>Implementing Auto Save Input</h1>
+        <p>Retrieving user input value when the page loads</p>
       </div>
+      <AutoSaveInput />
     </> // <-- React Fragment
   );
 }

@@ -23,3 +23,14 @@ body.dark .theme-toggle-btn {
   background-color: darkgray;
   color: white;
 }
+
+/* Auto Save Input Stylings */
+
+.auto-save-input {
+  padding: 10px;
+  border: 1px solid rgba(128, 0, 128, 0.429);
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.368);
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+}
