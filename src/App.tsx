@@ -1,15 +1,16 @@
 import AutoSaveInput from "./AutoSaveInput";
+import Countdown from "./Countdown";
 // import ThemeToggle from "./Toggle";
 
 function App() {
   return (
     <>
       {/* <ThemeToggle /> */}
-      <div>
-        <h1>Implementing Auto Save Input</h1>
-        <p>Retrieving user input value when the page loads</p>
+      <div className="container">
+        <h1>Implementing Countdown Timer</h1>
+        <p>To decrease number every second</p>
       </div>
-      <AutoSaveInput />
+      <Countdown />
     </> // <-- React Fragment
   );
 }

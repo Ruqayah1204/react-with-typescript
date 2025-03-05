@@ -34,3 +34,18 @@ body.dark .theme-toggle-btn {
   outline: none;
   width: 300px;
 }
+
+/* Countdown timer */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
