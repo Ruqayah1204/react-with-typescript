@@ -59,17 +59,19 @@ body.dark .theme-toggle-btn {
 }
 
 /* Products */
-
-.product-section {
+section {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 20px;
+}
+.product-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .card {
-  width: 400px;
+  width: 300px;
   /* height: 500px; */
   background-color: blanchedalmond;
   display: flex;
@@ -79,18 +81,17 @@ body.dark .theme-toggle-btn {
 }
 
 .product-description {
-    font-size: 1.2rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 4.5em; 
-    transition: max-height 0.5s ease-in-out;
-  }
-  
-  .product-description:hover {
-    -webkit-line-clamp: unset;
-    max-height: 100vh;/
-  }
-  
+  font-size: 1.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.product-description:hover {
+  -webkit-line-clamp: unset;
+  max-height: 100vh;
+}
