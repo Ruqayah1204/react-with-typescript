@@ -1,8 +1,8 @@
-import Products from "./Products";
+import Todo from "./Todo";
 function App() {
   return (
     <>
-      <Products />
+      <Todo/>
     </>
   );
 }

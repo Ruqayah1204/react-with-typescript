@@ -1,97 +1,90 @@
 /* Light mode */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   color: black;
   transition: 0.3s;
+  overflow: hidden;
+
+
 }
-
-/* Dark mode */
-body.dark {
-  background-color: #090224;
-  color: white;
-}
-
-.theme-toggle-btn {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: lightcyan;
-  cursor: pointer;
-}
-
-body.dark .theme-toggle-btn {
-  background-color: darkgray;
-  color: white;
-}
-
-/* Auto Save Input Stylings */
-
-.auto-save-input,
-.show-hide-btn {
-  padding: 10px;
-  border: 1px solid rgba(128, 0, 128, 0.429);
-  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.368);
-  border-radius: 5px;
-  outline: none;
-  width: 300px;
-}
-
-/* Countdown timer */
-
-.container {
+section{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.timer {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Show Hide Component */
-.show-hide-btn {
-  width: 150px;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-/* Products */
-section {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.product-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  background-color: rgb(162, 161, 161);
+  min-height: 100vh;
   gap: 20px;
 }
 
-.card {
-  width: 300px;
-  /* height: 500px; */
-  background-color: blanchedalmond;
+.form{
+  background-color: green;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 20px;
+  width: 50%;
+  box-shadow: 1px 1px 5px black;
 }
 
-.product-description {
-  font-size: 1.2rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 4.5em;
-  transition: max-height 0.5s ease-in-out;
+.formInput{
+  height: 40px; 
+  padding: 0 10px;
+  width: 80%;
+  background-color: white;
+  outline: none;
+  border: none;
 }
 
-.product-description:hover {
-  -webkit-line-clamp: unset;
-  max-height: 100vh;
+.formBtn{
+  background-color: black;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  width: 20%;
+  /* padding: 30px; */
+
 }
+
+
+.taskCard{
+  background-color: aliceblue;
+  width: 50%;
+
+}
+.taskList{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 10px;
+}
+
+.taskList:nth-child(even){
+  background-color: rgba(0, 0, 255, 0.155);
+}
+.taskTitle{
+  text-decoration: line-through solid red;
+  transition: 0.5s;
+}
+
+.taskList button{
+  cursor: pointer;
+  /* padding: 10px; */
+  border: none;
+  outline: none;
+  padding-right: 10px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.taskList button:hover{
+  color: red;
+}
+
+
+
+
